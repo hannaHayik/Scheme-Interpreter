@@ -16,7 +16,7 @@ import { L5typeof } from './L5-typecheck';
 //             if(isArray(s))
 //         expect(s[0]).to.;
 //     });
-// });
+// }); 
 
 const pretty = (obj: any): void => console.log(JSON.parse(JSON.stringify(obj, undefined, 2)));
 const s=bind(parse("(let-values (((a b c) (values 5 5 5)) ((x y z) (values 5 5 5))) (+ a b c x y z))"),parseL5Exp);

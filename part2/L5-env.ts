@@ -1,5 +1,5 @@
 // Environment for L5 with mutation
-// ================================
+// ===============================
 // An environment represents a partial function from symbols (variable names) to values.
 // It supports the operation: applyEnv(env,var)
 // which either returns the value of var in the environment, or else an error.

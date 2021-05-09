@@ -3,7 +3,7 @@ import { Value, isSymbolSExp, isCompoundSExp, makeCompoundSExp, makeEmptySExp, i
 import { Result, makeFailure, makeOk, mapResult } from "../shared/result";
 import { allT, first, rest } from "../shared/list";
 import { isNumber, isString, isBoolean } from "../shared/type-predicates";
-import { reduce } from "ramda";
+import { reduce } from "ramda"; 
 
 export const applyPrimitive = (proc: PrimOp, args: Value[]): Result<Value> =>
     proc.op === "+" ? (allT(isNumber, args) ? makeOk(reduce((x, y) => x + y, 0, args)) : makeFailure("+ expects numbers only")) :
